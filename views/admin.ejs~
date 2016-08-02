@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin</title>
+    <link rel="stylesheet"  type="text/css"  href="/stylesheets/admin.css">
+ <script src="/javascripts/jquery-3.0.0.js"  ></script>
+    <script src="/javascripts/admin.js"></script>
+    <script class="shopping_item_template" type="text/template">
+        <tr class='shopping_items_list' id="delate">
+            <td>kind</td>
+            <td>name</td>
+            <td>
+                <button class="reduce_count" >-</button><input type="text"  class="amount"  value="0"><button class="add_count">+</button>
+            </td>
+            <td>price</td>
+            <td>unit</td>
+            <td>time</td>
+            <td><button class="detail_button">详情</button><button class="delate_button">删除</button></td>
+        </tr>
+    </script>
+
+</head>
+<body>
+<div class="home_navigation">
+    <p class="head_line"> pos机后台管理系统</p>
+</div>
+<div class="page_content">
+    <div class="left_nevigation">
+        <button class="shopping_manage">商品管理</button>
+        <button class="discount_activity">折扣活动</button>
+    </div>
+    <div class="shopping_manage_info">
+        <p class="manage_info_title">商品信息管理</p>
+        <button class="add_shopping_info">添加商品</button>
+        <table class="shopping_list">
+            <tr class="shopping_list_head">
+                <th>序号</th>
+                <th>商品名称</th>
+                <th>商品数量</th>
+                <th>单价（元）</th>
+                <th>单位</th>
+                <th>发布时间</th>
+                <th>操作</th>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
